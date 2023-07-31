@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startTriviaFragment">
+
+    <fragment
+        android:id="@+id/triviaFragment"
+        android:name="com.roshka.triviaandroid.fragments.TriviaFragment"
+        android:label="fragment_trivia"
+        tools:layout="@layout/fragment_trivia" >
+        <action
+            android:id="@+id/action_triviaFragment_to_endTriviaFragment"
+            app:destination="@id/endTriviaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endTriviaFragment"
+        android:name="com.roshka.triviaandroid.fragments.EndTriviaFragment"
+        android:label="fragment_end_trivia"
+        tools:layout="@layout/fragment_end_trivia" >
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/startTriviaFragment"
+        android:name="com.roshka.triviaandroid.fragments.StartTriviaFragment"
+        android:label="fragment_start_trivia"
+        tools:layout="@layout/fragment_start_trivia" >
+        <action
+            android:id="@+id/action_startTriviaFragment_to_triviaFragment"
+            app:destination="@id/triviaFragment" />
+    </fragment>
+</navigation>

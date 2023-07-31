@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TriviaAndroid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score">Score: %1$d</string>
+    <string name="game_finish_message">"Finalizaste la trivia con %1$d pts."</string>
+</resources>
