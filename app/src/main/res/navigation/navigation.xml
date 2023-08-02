@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_trivia" >
         <action
             android:id="@+id/action_triviaFragment_to_endTriviaFragment"
-            app:destination="@id/endTriviaFragment" />
+            app:destination="@id/endTriviaFragment"
+            app:popUpTo="@id/startTriviaFragment" />
     </fragment>
     <fragment
         android:id="@+id/endTriviaFragment"
@@ -33,6 +34,7 @@
         tools:layout="@layout/fragment_start_trivia" >
         <action
             android:id="@+id/action_startTriviaFragment_to_triviaFragment"
-            app:destination="@id/triviaFragment" />
+            app:destination="@id/triviaFragment"
+            app:popUpTo="@id/startTriviaFragment" />
     </fragment>
 </navigation>
