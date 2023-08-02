@@ -11,83 +11,86 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/score"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Score: 0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_score"
+        app:srcCompat="@drawable/questionicon" />
 
     <TextView
         android:id="@+id/text_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="20dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/linear_1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="Aqui va la pregunta fsdjfsdkf sdfkjhsdkfj sdfkjhsdkjf sdfkjshdfjk" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:text="Aqui va la pregunta" />
 
     <LinearLayout
-        android:id="@+id/linear_1"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:orientation="vertical"
         android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
-        <Button
-            android:id="@+id/button_answer_1"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_answer_1"
+                style="@style/buttonTrivia"
+                android:layout_marginEnd="10dp"
+                tools:text="Answer 1" />
+
+            <Button
+                android:id="@+id/button_answer_2"
+                style="@style/buttonTrivia"
+                tools:text="Answer 2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_trivia"
-            android:padding="20dp"
-            tools:text="Answer 1" />
+            android:layout_marginTop="20dp">
 
-        <Button
-            android:id="@+id/button_answer_2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/button_trivia"
-            android:padding="20dp"
-            tools:text="Answer 2" />
+            <Button
+                android:id="@+id/button_answer_3"
+                style="@style/buttonTrivia"
+                android:layout_marginEnd="10dp"
+                tools:text="Answer 3" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button_answer_4"
+                style="@style/buttonTrivia"
+                tools:text="Answer 4" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:paddingHorizontal="10dp"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_1">
-
-        <Button
-            android:id="@+id/button_answer_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_trivia"
-            android:padding="20dp"
-            tools:text="Answer 3" />
-
-        <Button
-            android:id="@+id/button_answer_4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/button_trivia"
-            android:padding="20dp"
-            tools:text="Answer 4" />
+        </LinearLayout>
 
     </LinearLayout>
 

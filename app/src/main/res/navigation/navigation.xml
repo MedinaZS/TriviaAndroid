@@ -22,6 +22,9 @@
         <argument
             android:name="score"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_endTriviaFragment_to_startTriviaFragment"
+            app:destination="@id/startTriviaFragment" />
     </fragment>
     <fragment
         android:id="@+id/startTriviaFragment"

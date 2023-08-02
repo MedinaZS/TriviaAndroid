@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="trivia_questions">
+        <item>
+            <question_text>¿Cuál es el río más largo del mundo?</question_text>
+            <options>
+                Nilo,Amazonas,Misisipi,Yangtsé
+            </options>
+            <answer>0</answer>
+        </item>
+        <item>
+            <question_text>
+                ¿Cuál es el país más grande del mundo en términos de área?
+            </question_text>
+            <options>
+                Rusia,Canadá,Estados Unidos,China
+            </options>
+            <answer>
+                0
+            </answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el animal terrestre más rápido del mundo?</question_text>
+            <options>Guepardo,León,Elefante,Rinoceronte</options>
+            <answer>0</answer>
+        </item>
+        <item>
+            <question_text>¿Qué famoso pintor es conocido por pintar la "Mona Lisa"?</question_text>
+            <options>Vincent van Gogh,Leonardo da Vinci,Pablo Picasso,Michelangelo</options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el tercer planeta en nuestro sistema solar?</question_text>
+            <options>Mercurio,Venus,Tierra,Marte</options>
+            <answer>2</answer>
+        </item>
+        <item>
+            <question_text>¿Qué ciudad es conocida como la "Ciudad de los Rascacielos"?
+            </question_text>
+            <options>Chicago,Tokio,Nueva York,Dubái</options>
+            <answer>2</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el metal más ligero y abundante en la corteza terrestre?
+            </question_text>
+            <options>Hierro,Aluminio,Cobre,Plomo</options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el océano más grande del mundo?</question_text>
+            <options>Océano Índico,Océano Pacífico,Océano Atlántico,Océano Ártico</options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿En qué continente se encuentra Egipto?</question_text>
+            <options>Asia,África,Europa,América</options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el instrumento musical de viento más pequeño del mundo?
+            </question_text>
+            <options>Flauta,Armónica,Trompeta,Clarinete</options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿Quién escribió la famosa obra "Romeo y Julieta"?</question_text>
+            <options>William Shakespeare,Charles Dickens,Jane Austen,Mark Twain</options>
+            <answer>0</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el monte más alto del mundo?</question_text>
+            <options>Monte Kilimanjaro,Monte Everest,Monte Aconcagua,Monte McKinley (Denali)
+            </options>
+            <answer>1</answer>
+        </item>
+        <item>
+            <question_text>¿Cuál es el océano más frío del mundo?</question_text>
+            <options>Océano Atlántico,Océano Índico,Océano Pacífico,Océano Ártico</options>
+            <answer>3</answer>
+        </item>
+        <item>
+            <question_text>¿Qué famoso río atraviesa Egipto?</question_text>
+            <options>Nilo,Amazonas,Misisipi,Danubio</options>
+            <answer>0</answer>
+        </item>
+        <item>
+            <question_text>¿Qué país es conocido como la "Tierra del Sol Naciente"?</question_text>
+            <options>China,Japón,India,Australia</options>
+            <answer>1</answer>
+        </item>
+    </array>
+</resources>
