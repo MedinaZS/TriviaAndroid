@@ -25,26 +25,7 @@ class TriviaFragment : Fragment() {
     private var turn = 0
     private var score = 0
 
-    private var quiz : List<TriviaQuestion> = mutableListOf()
-
-//    private val quiz2 = arrayOf(
-//        mutableMapOf(
-//            "question" to "¿Cuántas franjas tiene la bandera de Estados Unidos?",
-//            "choices" to listOf("12", "14", "11", "13"),
-//            "correct" to "13"
-//        ),
-//        mutableMapOf(
-//            "question" to "¿Cuál es el río más largo del mundo?",
-//            "choices" to listOf("Nilo", "Amazonas", "Misisipi", "Yangtsé"),
-//            "correct" to "Nilo"
-//        ),
-//        mutableMapOf(
-//            "question" to "¿Cuál es el animal terrestre más rápido del mundo?",
-//            "choices" to listOf("Guepardo", "León", "Rinoceronte", "Venado"),
-//            "correct" to "Guepardo"
-//        )
-//    )
-
+    private var quiz: List<TriviaQuestion> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -78,7 +59,6 @@ class TriviaFragment : Fragment() {
     }
 
     private fun playTurn() {
-        println(quiz.size)
         if (turn < quiz.size) {
             textQuestion.text = quiz[turn].questionText
 
@@ -95,10 +75,8 @@ class TriviaFragment : Fragment() {
 
     private fun checkAnswer(button: Button) {
         if (turn < quiz.size) {
-            //obtener el indice de la respuesta correcta
-            val indexCorrect = quiz[turn].answer
 
-            if (button.text == quiz[turn].choices[indexCorrect])
+            if (button.text == quiz[turn].answer)
                 score++
 
             textScore.text = getString(R.string.score, score)
