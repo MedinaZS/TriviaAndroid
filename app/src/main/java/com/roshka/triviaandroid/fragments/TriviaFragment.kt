@@ -44,7 +44,7 @@ class TriviaFragment : Fragment() {
 
         buttonAnswer1.setOnClickListener { checkAnswer(buttonAnswer1) }
         buttonAnswer2.setOnClickListener { checkAnswer(buttonAnswer2) }
-        buttonAnswer3.setOnClickListener { checkAnswer(buttonAnswer2) }
+        buttonAnswer3.setOnClickListener { checkAnswer(buttonAnswer3) }
         buttonAnswer4.setOnClickListener { checkAnswer(buttonAnswer4) }
 
         // Colocar Score inicial
