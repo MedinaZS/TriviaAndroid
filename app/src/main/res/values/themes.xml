@@ -1,8 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.TriviaAndroid" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Base.Theme.TriviaAndroid" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/teal</item>
+        <item name="colorPrimaryVariant">@color/ultra_dark_teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Action Bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.TriviaAndroid" parent="Base.Theme.TriviaAndroid" />
