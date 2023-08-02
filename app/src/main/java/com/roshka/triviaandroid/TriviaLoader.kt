@@ -11,7 +11,7 @@ fun loadTriviaQuestions(context: Context): List<TriviaQuestion> {
     for (i in questionArray.indices step 3) {
         // Obtener la pregunta con sus opciones y respuesta
         val questionText = questionArray[i].trim()
-        val choices = questionArray[i + 1].split(",")
+        val choices = questionArray[i + 1].split(", ")
         val answer = questionArray[i + 2].trim()
 
         val question = TriviaQuestion(questionText, choices, answer)
